@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Marchel 065</title>
+
+    <style>
+      body {
+        background-color: darkblue;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      header, footer {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      header>h1 {
+        color: orange;
+        font-size: 48px;
+        letter-spacing: 4px;
+        margin-bottom: 1px;
+      }
+
+      header>p {
+        background-color: orange;
+        color: red;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 8px;
+      }
+
+      hr {
+        background-color: orange;
+        border: none;
+        height: 15px;
+        width: 100%;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      nav>p {
+        padding-top: 2px;
+      }
+
+      nav>button {
+        background-color: lightblue;
+        border: none;
+        border-radius: 20px;
+        padding: 10px 20px;
+      }
+
+      nav>button>a {
+        color: orange;
+        font-size: 20px;
+        text-decoration: none;
+      }
+
+      main {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      img {
+        align-content: center;
+        border: 3px solid orange;
+        border-radius: 10px;
+        height: 500px;
+        width: 400px;
+      }
+
+      fieldset {
+        border: 4px solid orange;
+        border-radius: 7px;
+        padding: 10px;
+      }
+
+      legend {
+        background-color: orange;
+        border: none;
+        border-radius: 20px;
+        display: grid;
+        font-size: 24px;
+        font-weight: bold;
+        height: 40px;
+        place-items: center;
+        width: 25%;
+      }
+
+      label {
+        display: block;
+        font-weight: bolder;
+        margin-bottom: 5px;
+        text-align: left;
+      }
+
+      input {
+        background-color: orange;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-sizing: border-box;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        padding: 10px;
+        width: calc(100% - 5px);
+      }
+
+      table {
+        border: solid orange;
+        font-size: 24px;
+        margin: 0 auto;
+        width: 80%;
+        border-collapse: collapse;
+      }
+
+      fieldset>section{
+        background-color: #000;
+        overflow: hidden;
+      }
+
+      #font_weight {
+        font-weight: bold;
+      }
+
+      #background_color {
+        background-color: gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>BLOMATERA</h1>
+      <p>BLOG MAHASISWA ITERA</p>
+      <hr>
+    </header>
+
+    <nav>
+      <br>
+      <p><u>Silahkan klik tombol di bawah ini!</u></p>
+      <button type="button">
+        <a href="https://siakad.itera.ac.id/mahasiswa/ktm"><b>Kartu Tanda Mahasiswa</b></a>
+      </button>
+    </nav>
+
+    <main>
+      <article>
+        <hr>
+        <h2>Informasi Mahasiswa</h2>
+        <fieldset>
+          <legend>Data Mahasiswa</legend>
+          <br>
+          <img src="assets\FotoProfesional.jpg">
+          <p>
+            <label for="nama">Nama:</label>
+            <br>
+            <input type="text" id= "nama" name="nama" value="Marchel Karuna Kwee" disabled>
+          </p>
+          <p>
+            <label for="nim">NIM:</label>
+            <br>
+            <input type="number" id= "nim" name="nim" value="122140065" disabled>
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id= "email" name="email" value="marchel.122140065@student.itera.ac.id" disabled>
+          </p>
+          <p>
+            <label for="password">Password:</label>
+            <br>
+            <input type="password" id= "password" name="password" value="anonymous" disabled>
+          </p>
+          <p>
+            <label for="tanggal_lahir">Tanggal lahir:</label>
+            <br>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir>" value="2004-12-22" disabled>
+          </p>
+
+          <section>
+            <table border="6">
+              <tr id="font_weight">
+                <td colspan="3">Pengalaman Perkuliahan</td>
+              </tr>
+              <tr id="font_weight">
+                <th>No</th>
+                <th>Nama Mata Kuliah</th>
+                <th>Semester yang diambil</th>
+              </tr>
+              <tr id="background-color">
+                <td>1</td>
+                <td>Algoritma Pemrograman</td>
+                <td>1</td>
+              </tr>
+              <tr id="background-color">
+                <td>2</td>
+                <td>Algoritma dan Struktur Data</td>
+                <td>3</td>
+              </tr>
+              <tr id="background-color">
+                <td>3</td>
+                <td>Pemrograman Berorientasi Objek</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Pemrograman Web Dasar</td>
+                <td>5</td>
+              </tr>
+            </table>
+          </section>
+          
+        </fieldset>
+        <br>
+      </article>
+    </main>
+
+    <footer>
+      <br>
+      <hr>
+      <h1>TERIMA KASIH</h1>
+    </footer>
+  </body>
+</html>
