@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column; /* Mengatur flex direction ke column */
+  width: 100%;
+  height: 100vh; /* Mengatur tinggi body ke 100% viewport */
+}
+
+nav {
+  align-items: center;
+  background-color: gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  color: wheat;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-logo {
+  display: flex;
+  margin-right: -600px;
+}
+
+.nav-logo > img {
+  width: 50px;
+}
+
+.nav-header > header > h1 {
+  color: white;
+  font-family: "Rowdies", sans-serif;
+  font-size: 48px;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu > ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-menu > ul > li {
+  margin-left: 40px;
+}
+
+.nav-menu > ul > li > a {
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bolder;
+  text-decoration: none;
+  transition: transform 0.5s ease;
+}
+
+.nav-menu > ul > li > a:hover {
+  color: darkorange;
+  transform: translateY(-5px);
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1; /* Membuat content tumbuh untuk mengisi ruang yang tersisa */
+}
+
+.content-box {
+  align-items: center;
+  background-color: #d3d3d3;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  min-height: 300px;
+  padding: 20px;
+  text-align: center;
+  width: 80%;
+}
+
+.content-box > img {
+  border-radius: 50%;
+  height: 150px;
+  margin-bottom: 20px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.profil-content,
+.githubsaya-content,
+.keahlian-content {
+  font-family: "Marcellus", serif;
+  font-size: 18px;
+}
+
+.githubsaya-content > a {
+  background-color: #ebf5ee;
+  border-radius: 15px;
+  color: darkorange;
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 5px 20px;
+  text-decoration: none;
+}
+
+/* Responsif untuk Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .nav-logo {
+    margin-right: -850px;
+  }
+
+  .nav-header > header > h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+
+  .nav-menu {
+    border-top: 5px solid black;
+    flex-direction: column;
+  }
+
+  .nav-menu > ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu > ul > li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .content-box {
+    border-radius: 15px;
+    justify-content: center;
+    min-height: 150px;
+  }
+
+  .content-box > img {
+    align-self: center;
+  }
+
+  footer {
+    font-size: 16px;
+    margin-top: 150px;
+  }
+}
+
+/* Responsif untuk Handphone (di bawah 768px) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .nav-header > header > h1 {
+    font-size: 32px;
+  }
+
+  .nav-logo {
+    margin-right: -300px;
+  }
+
+  .nav-logo > img {
+    width: 25px;
+  }
+
+  .nav-menu > ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu > ul > li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .content-box {
+    padding: 15px;
+    margin: 30px 0;
+  }
+
+  .content-box > img {
+    align-self: center;
+    height: 100px;
+    width: 100px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 8px;
+    position: relative;
+  }
+}
